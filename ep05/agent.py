@@ -33,6 +33,9 @@ options = ClaudeAgentOptions(
         "docstring-reviewer": docstring_reviewer,
         "security-reviewer": security_reviewer,
     },
+    resume="02f6e500-433d-4053-ab0f-823c1cbb06ef",
+    fork_session=True,
+    setting_sources=["project"],
     hooks={
         "PreToolUse": [
             HookMatcher(matcher="Bash", hooks=[block_dangerous_bash]),
