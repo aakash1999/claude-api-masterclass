@@ -727,7 +727,7 @@ python agent.py 42
 > survival you built in step 6 paying off.
 
 ```bash
-python agent.py 42 "The author pushed a fix. Does the SQL injection finding still stand?"
+python3 agent.py 143 "The author pushed a fix. Does the SQL injection finding still stand?"
 # -> resuming session 5b3f2c1a for PR #42
 # ... no Grep, no re-read — it answers from the conversation it already had ...
 ```
