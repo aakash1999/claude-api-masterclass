@@ -35,7 +35,7 @@ docstring_reviewer = AgentDefinition(
         "mcp__pr_tools__check_docstrings",
         "mcp__pr_tools__submit_finding",
     ],
-    model="claude-haiku-4-5-20251001",
+    model="claude-haiku-4-5-20251001"
 )
 
 security_reviewer = AgentDefinition(
@@ -61,7 +61,7 @@ security_reviewer = AgentDefinition(
         "mcp__pr_tools__fetch_pr_metadata",
         "mcp__pr_tools__submit_finding",
     ],
-    model="claude-haiku-4-5-20251001",
+    model="claude-haiku-4-5-20251001"
 )
 
 # The coordinator's `agents=` option expects this shape. Each key is the
