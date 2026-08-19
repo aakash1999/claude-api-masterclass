@@ -48,6 +48,9 @@ def run_agent(user_message):
             max_tokens=1024,
             tools=tools,
             messages=messages,
+            output_config={"effort": "medium"},
+            thinking={"type": "adaptive"}
+
         )
 
         messages.append({"role": "assistant", "content": response.content})
