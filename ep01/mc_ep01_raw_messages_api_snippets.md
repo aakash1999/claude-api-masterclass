@@ -23,8 +23,13 @@ import anthropic
 client = anthropic.Anthropic()
 
 response = client.messages.create(
-    model="claude-sonnet-5",
+    model="claude-haiku-4-5-20251001",
     max_tokens=1024,
+    system=[{
+        "type": "text",
+        "text": "You are a senior code reviewer ...",
+        "cache_control": {"type": "ephemeral"}
+    }],
     messages=[{"role": "user", "content": "Say hello in five words."}],
 )
 print(response.content[0].text)
